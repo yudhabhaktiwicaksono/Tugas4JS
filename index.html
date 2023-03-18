@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Form Login Yudha</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        background-image: url(img/backround.jpg);
+        background-position: center;
+        margin-top: 600px;
+      }
+      .login {
+        position: fixed;
+        top: 50%;
+        left: 45%;
+        transform: translate(-30%, -50%);
+        background: rgba(4, 29, 23, 0.6);
+        padding: 50px;
+        width: 270px;
+        box-shadow: 0px 0px 25px 10px black;
+        border-radius: 15px;
+      }
+      .avatar {
+        font-size: 30px;
+        background: #e59866;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: fixed;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border-radius: 50%;
+        cursor: no-drop;
+      }
+      .login .lg-login {
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        padding-top: 0;
+        margin-top: -20px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .box-login {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        border-bottom: 2px solid white;
+        padding: 8px 0;
+      }
+      .box-login i {
+        font-size: 23px;
+        color: white;
+        padding: 5px 0;
+      }
+      .box-login input {
+        width: 85%;
+        padding: 5px 0;
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 18px;
+      }
+      .box-login input::placeholder {
+        color: white;
+      }
+      .btn-login .box-login input:hover {
+        background: rgba(10, 10, 10, s 0.5);
+      }
+      .btn-login {
+        margin-left: 10px;
+        margin-bottom: 20px;
+        background: none;
+        border: 1px solid white;
+        width: 92.5%;
+        padding: 10px;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 3px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: normal;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+      .btn-login:hover {
+        background: rgba(12, 30, 15, 0.5);
+      }
+      .bottom {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .bottom a {
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: normal;
+        font-weight: bold;
+      }
+      .bottom a:hover {
+        text-decoration: underline;
+      }
+      #ico {
+        cursor: no-drop;
+      }
+      #iput::placeholder {
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="countainer">
+      <div class="login">
+        <div class="avatar">
+          <i class="fa fa-user"></i>
+        </div>
+        <h2 class="lg-login">login</h2>
+        <div class="box-login">
+          <i id="ico" class="fas fa-envelope-open-text"></i>
+          <input
+            id="iput"
+            value=""
+            type="text"
+            name="user"
+            placeholder="masukan username"
+            onfocus="user()"
+          />
+        </div>
+        <div class="box-login">
+          <i id="ico" class="fas fa-lock"></i>
+          <input
+            id="iput"
+            value=""
+            type="password"
+            name="pwd"
+            placeholder="masukan password"
+            onfocus="pwd()"
+          />
+        </div>
+        <button type="button" name="login" class="btn-login" onclick="masuk()">
+          Login
+        </button>
+        <div class="bottom">
+          <a href="#">Register</a>
+          <a href="#">Forgot Password</a>
+        </div>
+      </div>
+    </form>
+
+    <script src="js/skripku.js"></script>
+  </body>
+</html>
